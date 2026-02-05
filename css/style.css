@@ -42,3 +42,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+:root { 
+  /* ========== colors ========== */ 
+  --orange: #FF7F11;
+  --black: #001011; 
+  --white: #F7F4F3; 
+  
+
+  /* secondary colors */
+  --hover: #FFA552; 
+
+  
+}
+
+
+body { 
+  background-color: var(--white)
+}
+
+
+ 
