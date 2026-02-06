@@ -7,13 +7,26 @@
         <meta name="description" content="This is a game to test your basic math skills">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="preload" as="font" type="font/woff2" href="./font/OpenSans-Variable.woff2" crossorigin="anonymous">
     </head>
     <body>
 
 
-        <div class="container">
-            
-        </div>
+        <main class="quiz-main-container">
+            <div class="quiz__container">
+                <div class="quiz__choices">
+                    <button id="addition-btn" class="quiz__choice" onclick="addition()">Addition</button>
+                    <button id="subtraction-btn" class="quiz__choice" onclick="subtraction()">Subtraction</button>
+                    <button id="mutiplication-btn" class="quiz__choice" onclick="mutiplication()">Mutiplication</button>
+                    <button id="division-btn" class="quiz__choice" onclick="division()">Division</button>
+                </div>  
+                <h1 id="question-el" class="quiz__question">Question: <span id="num1-el">3</span> + <span id="num2-el">3</span> </h1>
+                <input type="number" class="quiz__user-input" id="inputEl" onclick="checkAnswer()" required>
+                <button class="quiz__check-button" onclick="checkAnswer()">Check</button>
+                <p class="quiz__user-answer">Your Answer:</p>
+                <p class="quiz__correct-answer">Correct Answer:</p>
+            </div>
+        </main>
 
         <script src="script.js"></script>
     </body>
