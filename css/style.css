@@ -69,6 +69,7 @@ body {
   background-color: var(--orange);
   width: 100%;
   border: 3px solid var(--black);
+  overflow-y: hidden;
 }
 
 .quiz-main-container { 
@@ -96,6 +97,7 @@ body {
   padding: .3em;
   cursor: pointer;
   transition: 0.3s all ease;
+  font-weight: 500;
 }
 
 .quiz__choice:hover { 
@@ -115,6 +117,7 @@ body {
   font-weight: 500;
   margin: 0 auto;
   outline: none;
+  font-size: 1.2rem;
 }
 
 .quiz__check-button { 
